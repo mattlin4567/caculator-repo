@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>Caculator</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <script src="caculate.js"></script>
+</head>
+
+<body>
+    <div class="calculator">
+        <div id="screen">
+          0
+        </div>
+        <div class="keyboard">
+            <div class="keyboard-main">
+                <div class="row row1">
+                    <input type="button" class="button col operator" value="C" onclick="erase()">
+                    <input type="button" class="button col operator" value="/" onclick="operatorInput(this)">
+                    <input type="button" class="button col operator" value="x" onclick="operatorInput(this)">
+                </div>
+                <div class="row row2">
+                    <input type="button" class="button col" value="7" onclick="numInput(this)">
+                    <input type="button" class="button col" value="8" onclick="numInput(this)">
+                    <input type="button" class="button col" value="9" onclick="numInput(this)">
+                </div>
+                <div class="row row3">
+                    <input type="button" class="button col" value="4" onclick="numInput(this)">
+                    <input type="button" class="button col" value="5" onclick="numInput(this)">
+                    <input type="button" class="button col" value="6" onclick="numInput(this)">
+                </div>
+                <div class="row row4">
+                    <input type="button" class="button col" value="1" onclick="numInput(this)">
+                    <input type="button" class="button col" value="2" onclick="numInput(this)">
+                    <input type="button" class="button col" value="3" onclick="numInput(this)">
+                </div>
+                <div class="row row5">
+                    <input type="button" class="button col" style="flex: 2" value="0" onclick="numInput(this)">
+                    <input type="button" class="button col" style="font-weight:bold" value="." onclick="dotInput()">
+                </div>
+
+            </div>
+            <div class="keyboard-side">
+                <input type="button" class="button col operator normal" value="-" onclick="operatorInput(this)">
+                <input type="button" class="button col operator long" value="+" onclick="operatorInput(this)">
+                <input type="button" class="button col operator long" value="=" onclick="caculate()">
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

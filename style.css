@@ -1,0 +1,63 @@
+body {
+    background-color: #006594;
+}
+input[type=button], #screen {
+    font-family: 'Oswald', sans-serif;
+}
+.calculator {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 18.75em;
+}
+#screen {
+    background-color: #BDC3C6;
+    height: 1.5625em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 4em;
+    border-bottom: 2px solid #006594;
+    padding: 0px 5px 0px;
+}
+.keyboard {
+    display: flex;
+    flex-direction: row;
+}
+.keyboard-main {
+    flex: 3;
+}
+.keyboard-side {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+}
+.row {
+    height: 4.6875em;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    display: flex;
+}
+.col {
+    width: 4.6875em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input.button:hover {
+    background-color: #4AB2D6;
+}
+.button {
+    background-color: #BDC3C6;
+    border: none;
+    font-size: 1em;
+}
+.operator {
+    background-color: #BDC3C6;
+}
+.normal {
+    flex: 1;
+}
+.long {
+    flex: 2;
+}
